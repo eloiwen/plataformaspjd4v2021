@@ -39,6 +39,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         _animator = GetComponent<Animator>();
+        
         _collider2D = GetComponent<Collider2D>();
         _audioSource = GetComponent<AudioSource>();
 
@@ -143,4 +144,9 @@ public class EnemyController : MonoBehaviour
             other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
         }
     }
+
+    /*public void SetWalkDirection(Vector2 left)
+    {
+        throw new NotImplementedException();
+    }*/
 }
